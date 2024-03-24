@@ -1,0 +1,5 @@
+docxtpl
+vsdx
+pandas
+pywin32
+openpyxl
