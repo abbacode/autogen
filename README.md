@@ -139,7 +139,7 @@ print(variables["worksheet_name"]["column_name")
 # Horiztonal table example (row 1)
 print(variables["worksheet_name"][0]["column_name"])
 
-# Horiztonal table example (row 1)
+# Horiztonal table example (row 2)
 print(variables["worksheet_name"][1]["column_name"])
 
 ```
