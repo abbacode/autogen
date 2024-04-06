@@ -36,7 +36,7 @@ The following artefacts will automatically be generated:
 
 ## Variables
 
-The variables.xlsx file is where all the variable information is stored. You can structure and organise
+The `variables.xlsx` file is where all the variable information is stored. You can structure and organise
 your file using as many worksheets and tables as required. Each worksheet should contain a single table for ease 
 of use, however, there is also support for multiple tables within the same worksheet. Examples for this will be shown
 under the advanced usage section. 
@@ -68,7 +68,7 @@ These types of tables store the data as a list of dictionaries and can be refere
 | {{ contact_info[1].address }}  | China
 <br>
 It's also possible to show the entire table inside a word document using jinja2 syntax: <br>
-![image](https://github.com/abbacode/autogen/assets/13191198/0bb353c5-124c-47e7-9192-cef5082beb8b)
+![image](https://github.com/abbacode/autogen/assets/13191198/d08a09bb-8423-4720-aec0-136d9ac53634)
 
 
 ## Advanced Usage
