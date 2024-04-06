@@ -24,12 +24,12 @@ source of truth and can be used to generate artefacts on demand using templates.
 
 1. Create and activate the virtual environment
 2. Install the requirements: pip install -r requirements.txt 
-3. Update the template_design.docx
-4. Update the template_design.vsdx
-5. Update the variables.xlsx
+3. Update the `template_design.docx` to suit your requirements
+4. Update the `template_design.vsdx` to suit your requirements
+5. Update the `variables.xlsx` to suit your requirements
 6. Run the script: python main.py
 
-The artefacts generated:
+The following artefacts will automatically be generated:
 
 - detailed_design.docx
 - detailed_design.vsdx
