@@ -120,6 +120,30 @@ For example if the visio tab is called ```physical``` then the diagram can be au
 inside a word document template using the following syntax:<br><br>
 ```{{ images.physical }}```
 
+### How can I use my variables for other automation tasks
+
+If you're interested in using th data within the `variables.xlsx` file via Python for other automation tasks:
+```
+from autogen import (
+    create_data_frame_from_excel_file,
+    extract_variables_from_data_frame,
+)
+
+# Read the data
+df = create_data_frame_from_excel_file(file_path="variables.xlsx")
+variables = extract_variables_from_data_frame(data_frame=df)
+
+# Vertical table example
+print(variables["worksheet_name"]["column_name")
+
+# Horiztonal table example (row 1)
+print(variables["worksheet_name"][0]["column_name"])
+
+# Horiztonal table example (row 1)
+print(variables["worksheet_name"][1]["column_name"])
+
+```
+
 ## Example Output
 The variables examples worksheet tab: <br>
 <img width="214" alt="variable_example_worksheet" src="https://github.com/abbacode/autogen/assets/13191198/06889a61-8adb-4d39-96b1-8724596105f9">
