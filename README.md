@@ -41,7 +41,8 @@ your file using as many worksheets and tables as required. Each worksheet should
 of use, however, there is also support for multiple tables within the same worksheet. Examples for this will be shown
 under the advanced usage section. 
 
-These tables can then be referenced from inside the word document and visio diagram templates.
+These tables can then be referenced from inside the word document and visio diagram templates using jinja2 syntax.
+For a primer on jinja2 usage refer to: https://ultraconfig.com.au/blog/jinja2-a-crash-course-for-beginners/
 
 ### Vertical Tables
 
@@ -49,7 +50,7 @@ Consider the following vertical table is stored in the 'examples' worksheet:<br>
 
 ![image](https://github.com/abbacode/autogen/assets/13191198/e3474388-11ee-493e-92eb-2c267394aee2)
 <br><br>
-These types of tables can be referenced as key/value dictionary pairs inside the word document or visio diagram via:<br>
+These types of tables are great at storing key/value data that can be easily referenced inside your word document:<br>
 <br>
 {{ examples.key1 }}   ==> the value that would be shown upon rendering is: ```value1```<br>
 {{ examples.key2 }}   ==> the value that would be shown upon rendering is: ```value2```<br>
@@ -60,10 +61,10 @@ Consider the following horitzontal table is stored in the 'contact_info' workshe
 
 ![image](https://github.com/abbacode/autogen/assets/13191198/4d683d1c-6a97-4c1c-8639-9675c4f1bd44)
 <br><br>
-These types of tables can be referenced as list of dictionaries inside the word document or visio diagram via:<br>
+These types of tables store the data as a list of dictionaries :<br>
 <br>
-{{ contact_info[0].name }}   ==> the value that would be shown upon rendering is: ```Abdul```<br>
-{{ contact_info[1].address }}   ==> the value that would be shown upon rendering is: ```China```<br>
+{{ contact_info[0].name }}   ==> the value extracted from row 1 that would be shown upon rendering is: ```Abdul```<br>
+{{ contact_info[1].address }}   ==> the value extracted from row 2 that would be shown upon rendering is: ```China```<br>
 <br>
 It's also possible to show the entire table inside a word document using jinja2 syntax: <br><br>
 ![image](https://github.com/abbacode/autogen/assets/13191198/0bb353c5-124c-47e7-9192-cef5082beb8b)
