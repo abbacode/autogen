@@ -95,9 +95,26 @@ Examples on how to reference this data inside your tempalte:
 <br>
 
 
-### How to generate diagrams
+### How to auto generate visio diagrams
+
+Autogen also covers the automatic generation of visio diagrams. 
+
+Take the following scenario where ```template_design.vsdx``` is setup as follows:<br><br>
+![image](https://github.com/abbacode/autogen/assets/13191198/778a9df5-b2f6-4675-8eff-d68e824190c8)
+<br>
+And the ```diagram_variables``` worksheet within the variables file is setup as follows:<br><br>
+![image](https://github.com/abbacode/autogen/assets/13191198/da1301b9-430a-4b4c-9183-aedeb412b150) 
+<br>
+Will automatically produce the ```detailed_design.vsdx``` with the following output: <br><br>
+![image](https://github.com/abbacode/autogen/assets/13191198/98ab8f6a-f847-483b-b1df-9bc7f8d2ea02)
+
 
 ### How to include diagrams in word documents
+
+Diagrams can automatically be inserted into a word document by referencing the visio tab name.
+For example if the visio tab is called ```physical``` then the diagram can be automatically imported
+inside a word document template using the following syntax:<br><br>
+```{{ images.physical }}```
 
 ## Example Output
 The variables examples worksheet tab: <br>
