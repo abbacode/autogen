@@ -46,39 +46,39 @@ For a primer on jinja2 usage refer to: https://ultraconfig.com.au/blog/jinja2-a-
 
 ### Vertical Tables
 
-Consider the following vertical table is stored in the 'examples' worksheet:<br>
+Consider the following vertical table is stored in the `examples` worksheet:<br>
 
 ![image](https://github.com/abbacode/autogen/assets/13191198/e3474388-11ee-493e-92eb-2c267394aee2)
 <br><br>
 These types of tables are great at storing key/value data that can be easily referenced inside your word document:<br>
-<br>
-{{ examples.key1 }}   ==> the value that would be shown upon rendering is: ```value1```<br>
-{{ examples.key2 }}   ==> the value that would be shown upon rendering is: ```value2```<br>
-<br>
+|Syntax       | Value      |
+|:----------- |----------:|
+| {{ examples.key1 }}  | value1
+| {{ examples.key2 }}  | value2
 
 ### Horizontal Tables
-Consider the following horitzontal table is stored in the 'contact_info' worksheet:<br>
+Consider the following horitzontal table is stored in the `contact_info` worksheet:<br>
 
 ![image](https://github.com/abbacode/autogen/assets/13191198/4d683d1c-6a97-4c1c-8639-9675c4f1bd44)
 <br><br>
 These types of tables store the data as a list of dictionaries :<br>
+|Syntax       | Value      |
+|:----------- |----------:|
+| {{ contact_info[0].name }}  | Abdul
+| {{ contact_info[1].address }}  | China
 <br>
-{{ contact_info[0].name }}   ==> the value extracted from row 1 that would be shown upon rendering is: ```Abdul```<br>
-{{ contact_info[1].address }}   ==> the value extracted from row 2 that would be shown upon rendering is: ```China```<br>
-<br>
-It's also possible to show the entire table inside a word document using jinja2 syntax: <br><br>
+It's also possible to show the entire table inside a word document using jinja2 syntax: <br>
 ![image](https://github.com/abbacode/autogen/assets/13191198/0bb353c5-124c-47e7-9192-cef5082beb8b)
-<br>
 
 
 ## Advanced Usage
 
-### How to have add multiple tables in a single worksheet tab
+### How to have add multiple tables in a single worksheet
 Multiple tables within the same worksheet are supported with each table being assigned
 a name using the following convention: 
 <br>```<worksheet_table_name>table_<table_number>```
 
-i.e. if the 'more_examples' worksheet was setup as follows:<br><br>
+i.e. if the `more_examples` worksheet was created as follows:<br><br>
 ![image](https://github.com/abbacode/autogen/assets/13191198/4deb14df-a976-4af5-9f65-175e1310c069)
 <br><br>
 The key info for using multiple tables within the same worksheet:
@@ -87,11 +87,14 @@ The key info for using multiple tables within the same worksheet:
 - The last table on the page can ALSO be referenced using just the worksheet name
 - Any table headers starting with a # will be ignored and can be used to add comments
 
-Examples on how to reference this data inside your tempalte:
+Examples on how to reference this data inside your template:
 <br><br>
-{{ more_examples_table_1.key1 }}   ==> the value that would be shown upon rendering is: ```value1```<br>
-{{ more_examples_table_1.key2 }}   ==> the value that would be shown upon rendering is: ```value2```<br>
-{{ more_examples_table_2[0].name }}   ==> the value that would be shown upon rendering is: ```abdul```<br>
+
+|Syntax       | Value      |
+|:----------- |----------:|
+| {{ more_examples_table_1.key1 }}  | value1
+| {{ more_examples_table_1.key2 }}  | value2
+| {{ more_examples_table_2[0].name }}  | abdul
 <br>
 
 
