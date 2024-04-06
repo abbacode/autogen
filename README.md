@@ -50,7 +50,7 @@ Consider the following vertical table is stored in the `examples` worksheet:<br>
 
 ![image](https://github.com/abbacode/autogen/assets/13191198/e3474388-11ee-493e-92eb-2c267394aee2)
 <br><br>
-These types of tables are great at storing key/value data that can be easily referenced inside your word document:<br>
+These types of tables are great at storing key/value data that can be easily referenced inside your word document template:<br>
 |Syntax       | Value      |
 |:----------- |----------:|
 | {{ examples.key1 }}  | value1
@@ -61,7 +61,7 @@ Consider the following horitzontal table is stored in the `contact_info` workshe
 
 ![image](https://github.com/abbacode/autogen/assets/13191198/4d683d1c-6a97-4c1c-8639-9675c4f1bd44)
 <br><br>
-These types of tables store the data as a list of dictionaries :<br>
+These types of tables store the data as a list of dictionaries and can be referenced inside your word document template:<br>
 |Syntax       | Value      |
 |:----------- |----------:|
 | {{ contact_info[0].name }}  | Abdul
@@ -76,7 +76,8 @@ It's also possible to show the entire table inside a word document using jinja2 
 ### How to have add multiple tables in a single worksheet
 Multiple tables within the same worksheet are supported with each table being assigned
 a name using the following convention: 
-<br>```<worksheet_table_name>table_<table_number>```
+<br>
+> <worksheet_table_name>table_<table_number>
 
 i.e. if the `more_examples` worksheet was created as follows:<br><br>
 ![image](https://github.com/abbacode/autogen/assets/13191198/4deb14df-a976-4af5-9f65-175e1310c069)
