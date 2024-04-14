@@ -3,7 +3,7 @@
 import os
 import sys
 
-from adg import (
+from autogen import (
     add_images_to_template_variables,
     close_and_save_running_visio_application,
     close_and_save_running_word_application,
