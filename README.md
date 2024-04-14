@@ -3,7 +3,7 @@
 Autogen allows the creation of word documents and visio diagrams from templates. The templates rely on the Jinja2
 template engine to render and create new documents based on variables stored in an external excel spreadsheet.
 
-<br><img width="485" alt="word_template_example" src="https://github.com/abbacode/autogen/assets/13191198/5463f52b-de4a-4d13-8dc1-4f6d8c48d80b">
+<br><img width="485" alt="word_template_example" src="https://github.com/abbacode/autogen/assets/13191198/5463f52b-de4a-4d13-8dc1-4f6d8c48d80b"><br>
 <br><img width="485" alt="word_template_example" src="https://github.com/abbacode/autogen/assets/13191198/73cb5533-6975-40ea-be39-f2ac4da01e28">
 
 
