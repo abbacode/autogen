@@ -34,6 +34,13 @@ The following artefacts will automatically be generated:
 - detailed_design.docx
 - detailed_design.vsdx
 
+Example of the template:<br><br>
+<img width="485" alt="word_template_example" src="https://github.com/abbacode/autogen/assets/13191198/195a16bb-bbd7-42cf-99ac-d08fd0fd5d92">
+<br>
+Example after it has been rendered:<br><br>
+<img width="490" alt="word_rendered_example" src="https://github.com/abbacode/autogen/assets/13191198/925971e5-df23-4c0a-90b5-3f51bbf7cac0">
+
+
 ## Variables
 
 The `variables.xlsx` file is where all the variable information is stored. You can structure and organise
@@ -70,12 +77,11 @@ These types of tables store the data as a list of dictionaries and can be refere
 It's also possible to show the entire table inside a word document using jinja2 syntax: <br>
 ![image](https://github.com/abbacode/autogen/assets/13191198/d08a09bb-8423-4720-aec0-136d9ac53634)
 
-
 ## Advanced Usage
 
 ### How to have add multiple tables in a single worksheet
 Multiple tables within the same worksheet are supported with each table being assigned
-a name using the following convention: 
+an automatically generated name using the following convention: 
 <br>
 > <worksheet_table_name>table_<table_number>
 
@@ -143,17 +149,5 @@ print(variables["worksheet_name"][0]["column_name"])
 print(variables["worksheet_name"][1]["column_name"])
 
 ```
-
-## Example Output
-The variables examples worksheet tab: <br>
-<img width="214" alt="variable_example_worksheet" src="https://github.com/abbacode/autogen/assets/13191198/06889a61-8adb-4d39-96b1-8724596105f9">
-
-The variables contact_info tab:<br>
-<img width="289" alt="variable_contact_info_worksheet" src="https://github.com/abbacode/autogen/assets/13191198/7606089d-c5eb-413a-8934-87c02ecda663">
-
-The word document template:<br>
-<img width="485" alt="word_template_example" src="https://github.com/abbacode/autogen/assets/13191198/195a16bb-bbd7-42cf-99ac-d08fd0fd5d92">
-
-After it has been rendered:<br>
-<img width="490" alt="word_rendered_example" src="https://github.com/abbacode/autogen/assets/13191198/925971e5-df23-4c0a-90b5-3f51bbf7cac0">
+NOTE: An example can be found at [here](https://github.com/abbacode/autogen/blob/main/example.py)
 
