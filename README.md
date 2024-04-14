@@ -30,11 +30,11 @@ source of truth and can be used to generate artefacts on demand using templates.
 ## Quick Start
 
 1. Create and activate the virtual environment
-2. Install the requirements: pip install -r requirements.txt 
+2. Install the requirements: `pip install -r requirements.txt`
 3. Update the `template_design.docx` to suit your requirements
 4. Update the `template_design.vsdx` to suit your requirements
 5. Update the `variables.xlsx` to suit your requirements
-6. Run the script: python main.py
+6. Run the script: `python main.py`
 
 The following artefacts will automatically be generated:
 
